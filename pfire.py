@@ -20,8 +20,8 @@ if __name__ == '__main__':
                 if(exists('/home/pi/fire.txt')):
                     ser.write(b"FIRE\n")
                     print("SHOOTING")
-                    os.remove("fire.txt")
+                    os.remove("/home/pi/fire.txt")
                 if(exists('/home/pi/fake.txt')):
                     ser.write(b"FAKE\n")
                     print("FAKING")
-                    os.remove("fake.txt")
+                    os.remove("/home/pi/fake.txt")
